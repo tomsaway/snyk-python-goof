@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "snyk-python-goof"
-name = "snyk-python-goof"
 description = "A simple python package to illustrate dependency management with Poetry"
 authors = ['Snyk']
+package-mode = false
 
-python = "^3.8"
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
 anyio = "4.8.0"
 argon2-cffi = "23.1.0"
 argon2-cffi-bindings = "21.2.0"
@@ -138,8 +139,8 @@ wheel = "0.45.1"
 widgetsnbextension = "3.4.2"
 xlrd = "1.1.0"
 
-[tool.poetry.dev-dependencies]
-pytest = "^8.3.4"
+[tool.poetry.group.test.dependencies]
+pytest = "*"
 
 [build-system]
 requires = ["poetry>=0.12"]
