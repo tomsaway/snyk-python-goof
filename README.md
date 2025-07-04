@@ -20,12 +20,15 @@
 6. **Deactivate the Environment**
    deactivate
 
+```
 cd pip-sample
 python -m venv venv-pip
 .\venv-pip\Scripts\activate
 pip install -r requirements.txt
 snyk test --file=requirements.txt
 deactivate
+```
+
 
 ## Option 2: Using Pipenv
 
@@ -47,12 +50,15 @@ deactivate
 6. **Exit the Virtual Environment**
    exit
 
+```
 cd ..\pipenv-sample
 pipenv install Pipfile
 pipenv shell
 snyk test
 snyk monitor
 exit
+```
+
 
 ## Option 3: Using Poetry
 
@@ -74,12 +80,15 @@ exit
 6. **Exit the Virtual Environment**
    exit
 
+```
 cd ..\poetry-sample
 poetry install
 poetry shell
 snyk test
 snyk monitor
 exit
+```
+
 
 ## Option 4: Using setup.py
 
@@ -101,6 +110,7 @@ exit
 6. **Deactivate the Environment**
    deactivate
 
+```
 cd ..\setup-sample
 python -m venv venv-setup
 venv-setup\Scripts\activate
@@ -108,3 +118,5 @@ pip install -e .
 snyk test --file=setup.py
 snyk monitor --file=setup.py
 deactivate
+```
+
