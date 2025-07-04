@@ -26,6 +26,7 @@ python -m venv venv-pip
 .\venv-pip\Scripts\activate
 pip install -r requirements.txt
 snyk test --file=requirements.txt
+snyk monitor --file=requirements.txt
 deactivate
 ```
 
